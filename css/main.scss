@@ -1,0 +1,75 @@
+body {
+    background-color:#D0F3FE;
+    font-family: Arial;
+}
+.profile-holder {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 3em auto 1em;
+    padding: 0em 1em 1em;
+    border: 5px solid #035D7B;
+    .header-pic {
+        width:calc(100% + 2em);
+        margin-left: -1em;
+        border-bottom: 3px solid #035D7B
+    }
+}
+.credits-holder {
+    font-size: 10px;
+    text-align:center;
+    margin-top: 3em;
+}
+.info-block {
+    position:relative;
+    margin-left: 1em;
+    .title-holder {
+        margin-top: 1em;
+        margin-left: calc(1em + 150px);
+        line-height: 1em;
+        .title {
+            font-size:1.5em;
+        }
+        .title em {
+            font-family: "Times New Roman";
+            font-size: 0.8em;
+        }
+        .subtitle {
+            font-size: 1em;
+            margin-top:-.25em;
+        }
+    }
+    .profile-pic {
+        width:150px;
+        border: 2px solid #035D7B;
+        float:left;
+        margin-top:-115px;
+    }
+}
+.list-holder {
+    a {
+    color: #035D7B;
+    text-decoration: none;
+        &:hover {
+            color: #1795C0;
+        }
+    }
+    li {
+        line-height: 1.25em;
+    }
+}
+.description-holder {
+    padding: 0 1em;
+}
+.clearfix:after {
+ visibility: hidden;
+ display: block;
+ font-size: 0;
+ content: " ";
+ clear: both;
+ height: 0;
+ }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
